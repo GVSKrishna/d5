@@ -3,4 +3,4 @@ MAINTAINER "gvskrishna"
 COPY target/my-app.war
 WORKDIR /usr/app/
 EXPOSE 8080
-ENTRYPOINT ["java", "-war", "spring-boot-docker-app.war"]
+ENTRYPOINT ["java", "-war", "my-app.war"]
