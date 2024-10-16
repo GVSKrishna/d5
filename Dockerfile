@@ -1,6 +1,6 @@
 FROM openjdk:17
 MAINTAINER "gvskrishna"
-COPY target/spring-boot-docker-app.war  /usr/app/
+COPY target/my-app.war
 WORKDIR /usr/app/
 EXPOSE 8080
 ENTRYPOINT ["java", "-war", "spring-boot-docker-app.war"]
