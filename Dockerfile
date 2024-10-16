@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:17
 MAINTAINER "gvskrishna"
 COPY target/spring-boot-docker-app.war  /usr/app/
 WORKDIR /usr/app/
