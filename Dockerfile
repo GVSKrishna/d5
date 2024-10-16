@@ -1,6 +1,4 @@
-FROM openjdk:17
-MAINTAINER "gvskrishna"
-COPY target/spring-boot-docker-app.war  /usr/app/
-WORKDIR /usr/app/
+FROM tomcat:8.0.20-jre8
+MAINTAINER GVS
 EXPOSE 8080
-ENTRYPOINT ["java", "-war", "spring-boot-docker-app.war"]
+COPY target/my-app /usr/local/tomcat/webapps/my-app
