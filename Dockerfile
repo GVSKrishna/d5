@@ -1,6 +1,4 @@
-FROM openjdk:17
-MAINTAINER "gvskrishna"
-COPY target/my-app.war
-WORKDIR /usr/app/
+FROM tomcat:8.0.20-jre8
+MAINTAINER GVS
 EXPOSE 8080
-ENTRYPOINT ["java", "-war", "my-app.war"]
+COPY target/my-app /usr/local/tomcat/webapps/my-app
